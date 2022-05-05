@@ -1,0 +1,4 @@
+rootProject.name = 'StockExchangeDocker'
+include 'common'
+include 'market-emulator'
+include 'personal-account'

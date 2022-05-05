@@ -1,0 +1,26 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'java'
+}
+
+group 'ru.wafemand'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':common')
+    implementation 'io.ktor:ktor-server-netty:1.6.7'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.testcontainers:testcontainers:1.16.3'
+    testImplementation 'org.testcontainers:mongodb:1.16.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
